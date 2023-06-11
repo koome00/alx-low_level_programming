@@ -1,6 +1,6 @@
-#include <stdio.h> /* printf */
-#include <stdlib.h> /* atoi */
-#include <stdbool.h> /* bool data type */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
 /**
  * num - iterate through each argv to test if it's a number
