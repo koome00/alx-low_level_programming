@@ -58,15 +58,15 @@ void print_all(const char * const format, ...)
 	       {'i', print_int},
 	       {'f', print_float},
 	       {'s', print_s},
-	       {0, NULL}
+	       {NULL, NULL}
 	};
 
 	va_start(list, format);
 	while (format != NULL && format[j] != '\0')
 	{
-		while (choice[i].letter != 0)
+		while (choice[i].letter != NULL)
 		{
-			if (choice[i].letter == format[j])
+			if (*(choice[i].letter) == format[j])
 			{
 				printf("%s", separator);
 				choice[i].func(list);
