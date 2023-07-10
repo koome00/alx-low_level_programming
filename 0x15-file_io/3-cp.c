@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - copy the content of one file into another
  * @ac: number of arguments
