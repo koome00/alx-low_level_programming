@@ -15,7 +15,7 @@ def island_perimeter(grid):
     total_peri = 0
     for x, row in enumerate(grid):
         for y, element in enumerate(row):
-            if grid[x][y] == 1:
+            if element == 1:
                 peri = 4
                 if grid[x+1][y] == 1:
                     peri = peri - 1
