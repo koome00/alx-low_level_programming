@@ -24,14 +24,11 @@ def island_perimeter(grid):
                 # check right upto second last column
                 if grid[x][y+1] == 1 and y < (len(grid)-1):
                     peri = peri - 1
-                
                 # check top upto second last row
                 if grid[x-1][y] == 1 and x > 0:
                     peri = peri - 1
                 # check left upto second last column
                 if grid[x][y-1] == 1 and y > 0:
                     peri = peri - 1
-                              
                 total_peri = peri + total_peri
     print(total_peri)
-
