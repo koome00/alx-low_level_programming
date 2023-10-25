@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
- returns the perimeter of the island described in grid:
+Module Island Perimeter
+returns the perimeter of the island described in grid:
 
 grid is a list of list of integers:
 0 represents a water zone
@@ -31,4 +32,4 @@ def island_perimeter(grid):
                 if grid[x][y-1] == 1 and y > 0:
                     peri = peri - 1
                 total_peri = peri + total_peri
-    print(total_peri)
+    return total_peri
