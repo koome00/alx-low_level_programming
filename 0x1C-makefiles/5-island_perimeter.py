@@ -11,6 +11,7 @@ Grid is rectangular, width and height don’t exceed 100
 
 """
 
+
 def island_perimeter(grid):
     total_peri = 0
     for x, row in enumerate(grid):
